@@ -9,6 +9,8 @@ public class Recommendation
 
   private String imgLink;
 
+  private boolean hasImage;
+
 
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
@@ -21,6 +23,8 @@ public class Recommendation
       likes = 0;
 
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
+
+      hasImage = false;
 
   }
 
@@ -38,6 +42,10 @@ public class Recommendation
   public String getImgLink(){
     return imgLink;
   }
+
+  public String getHasImage() {
+    return hasImage;
+  }
   
 
   //  STEP 4 of 4: Add one mutator method (setter) for your instance variable
@@ -53,5 +61,8 @@ public class Recommendation
     imgLink = _imgLink;
   }
 
+  public String setHasImage(boolean _hasImage) {
+    hasImage = _hasImage;
+  }
 
 }
